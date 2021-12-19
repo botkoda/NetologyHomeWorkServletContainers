@@ -1,5 +1,6 @@
 package ru.netology.repository;
 
+import org.springframework.stereotype.Repository;
 import ru.netology.model.Post;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 
-// Stub
+@Repository
 public class PostRepository {
     List<Post> postList = new CopyOnWriteArrayList<>();
     AtomicInteger postNumber = new AtomicInteger();
